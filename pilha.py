@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 class No(object):
     def __init__(self, item=None, ant=None):
