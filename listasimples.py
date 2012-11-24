@@ -26,12 +26,6 @@ class ListaSimples(object):
         self.ultimo = self.ultimo.prox
         self.qtd+=1
 
-    def mostra(self):
-        aux = self.primeiro.prox
-        while (aux):
-            print aux.item
-            aux = aux.prox
-
     def removerNoInicio(self):
         remove = self.primeiro.prox
         self.primeiro.prox = remove.prox
@@ -46,6 +40,12 @@ class ListaSimples(object):
         self.ultimo = prev
         self.ultimo.prox = None
         return remove.item
+
+    def mostra(self):
+        aux = self.primeiro.prox
+        while (aux):
+            print aux.item
+            aux = aux.prox
 
 
 def main():
